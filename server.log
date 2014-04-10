@@ -4,445 +4,1267 @@
 => Ctrl-C to shutdown server
 
 
-Started GET "/" for 127.0.0.1 at 2014-04-10 13:43:01 +0530
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:12:36 +0530
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by HomeController#show as HTML
-  Rendered home/show.html.erb within layouts/application (1.5ms)
-Completed 200 OK in 69ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (2.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 106ms (Views: 74.3ms | ActiveRecord: 3.3ms)
 
 
-Started GET "/app/assets/stylesheets/bootstrap-theme.css" for 127.0.0.1 at 2014-04-10 13:43:01 +0530
-
-ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/bootstrap-theme.css"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:36 +0530
 
 
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (46.4ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (83.1ms)
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:36 +0530
 
 
-Started GET "/app/assets/javascripts/bootstrap.js" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
-
-ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/bootstrap.js"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:37 +0530
 
 
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.9ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.4ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:37 +0530
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:37 +0530
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:37 +0530
 
 
-Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:37 +0530
 
 
-Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:12:37 +0530
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:37 +0530
 
 
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
-
-
-Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:02 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-04-10 13:43:04 +0530
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:12:39 +0530
 Processing by HomeController#show as HTML
-  Rendered home/show.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/ideas" for 127.0.0.1 at 2014-04-10 13:43:05 +0530
-
-ActionController::RoutingError (No route matches [GET] "/ideas"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
 
 
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.4ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
 
 
-Started GET "/ideas" for 127.0.0.1 at 2014-04-10 13:43:05 +0530
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
 
-ActionController::RoutingError (No route matches [GET] "/ideas"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:12:40 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:12:41 +0530
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-04-10 15:12:50 +0530
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:12:50 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:12:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:13:33 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:13:36 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:13:37 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:13:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:15:42 +0530
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2014-04-10 15:15:44 +0530
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2014-04-10 15:15:45 +0530
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=f996cf153b1c3c3602e03d721e7dc5f7207599b3c63884d3&code=4/vYNlAGifv8zHYIvy_Ga1dMJwVwVG.8jc1QzRVEk4eXE-sT2ZLcbQVhxKWigI" for 127.0.0.1 at 2014-04-10 15:15:49 +0530
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"f996cf153b1c3c3602e03d721e7dc5f7207599b3c63884d3", "code"=>"4/vYNlAGifv8zHYIvy_Ga1dMJwVwVG.8jc1QzRVEk4eXE-sT2ZLcbQVhxKWigI", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '103271935090636425440' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  UPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "ya29.1.AADtN_VZXCA4fIiUb1BZOlQbS9LFB0M4Q8WFS0UAfrrxPpFAU928bGTzxB5q2_WtnII"], ["oauth_expires_at", Thu, 10 Apr 2014 10:45:49 UTC +00:00], ["updated_at", Thu, 10 Apr 2014 09:45:50 UTC +00:00]]
+  [1m[36m (104.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 120ms (ActiveRecord: 107.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-10 15:15:51 +0530
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:10 +0530
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2014-04-10 15:17:29 +0530
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:30 +0530
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2014-04-10 15:17:56 +0530
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:17:59 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:18:17 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:20:57 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:27:13 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (17.0ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `edit_user_path' for #<#<Class:0x000000034e0608>:0x007f8f30146df8>):
+    29:                         Account <b class="caret"></b>
+    30:                     </a>
+    31:                 <ul class="dropdown-menu">
+    32:                         <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+    33:                         <li class="divider"></li>
+    34:                         <li>
+    35:                             <%= link_to "Sign out", signout_path, method: "delete" %>
+  app/views/layouts/_header.html.erb:32:in `_app_views_layouts__header_html_erb__1007413704067088422_70126548553780'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2524076487441826612_70126548669700'
+
+
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:28:36 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:19 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (18.6ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x000000034e0608>:0x007f8f30330d08>):
+    11:                 Account <b class="caret"></b>
+    12:               </a>
+    13:               <ul class="dropdown-menu">
+    14:                 <li><%= link_to "Profile", current_user %></li>
+    15:                 <li class="divider"></li>
+    16:                 <li>
+    17:                   <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+  app/views/layouts/_header.html.erb:14:in `_app_views_layouts__header_html_erb__1007413704067088422_70126482685820'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2524076487441826612_70126548669700'
 
 
   Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.2ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.1ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
 Processing by HomeController#show as HTML
-  Rendered home/show.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms)
 
 
-Started GET "/app/assets/javascripts/bootstrap.js" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
 
-ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/bootstrap.js"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:34:44 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:48 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:48 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:48 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:48 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:49 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:49 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:49 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:34:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 250ms (Views: 248.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:19 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:41:20 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:41:30 +0530
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:41:30 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:41:36 +0530
+Processing by HomeController#show as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:41:36 +0530
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-04-10 15:41:40 +0530
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:41:40 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    26: </header>
+    27: 
+    28: <!--
+    29: <li><%= link_to current_user.name,  '#' %></li>
+    30:             <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+    31: 
+    32: 
+  app/views/layouts/_header.html.erb:29:in `_app_views_layouts__header_html_erb__1007413704067088422_70126515651440'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2524076487441826612_70126548669700'
+
+
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-04-10 15:41:40 +0530
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:41:40 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    26: </header>
+    27: 
+    28: <!--
+    29: <li><%= link_to current_user.name,  '#' %></li>
+    30:             <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+    31: 
+    32: 
+  app/views/layouts/_header.html.erb:29:in `_app_views_layouts__header_html_erb__1007413704067088422_70126616302180'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2524076487441826612_70126548669700'
+
+
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:41:53 +0530
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    26: </header>
+    27: 
+    28: <!--
+    29: <li><%= link_to current_user.name,  '#' %></li>
+    30:             <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+    31: 
+    32: 
+  app/views/layouts/_header.html.erb:29:in `_app_views_layouts__header_html_erb__1007413704067088422_70126616302180'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2524076487441826612_70126548669700'
 
 
   Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.2ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
 
 
-Started GET "/app/assets/stylesheets/bootstrap-theme.css" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/bootstrap-theme.css"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.7ms)
-
-
-Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:10 +0530
-
-
-Started GET "/" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 Processing by HomeController#show as HTML
-  Rendered home/show.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  Rendered home/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/app/assets/javascripts/bootstrap.js" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
-
-ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/bootstrap.js"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.1ms)
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/app/assets/stylesheets/bootstrap-theme.css" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
-
-ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/bootstrap-theme.css"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
-  Rendered /home/mridul/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.5ms)
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 13:43:34 +0530
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/static_pages/help" for 127.0.0.1 at 2014-04-10 13:43:36 +0530
-Processing by StaticPagesController#help as HTML
-  Rendered static_pages/help.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
 
 
-Started GET "/" for 127.0.0.1 at 2014-04-10 13:43:39 +0530
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:04 +0530
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2014-04-10 15:42:06 +0530
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2014-04-10 15:42:07 +0530
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=977b17fa8cc25395f78563d2677f976176da5fb9bf35680b&code=4/iYISf3mMshlleoa55g68iu3Vhlct.UglFrR8fvcMbXE-sT2ZLcbQxzkKWigI" for 127.0.0.1 at 2014-04-10 15:42:11 +0530
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"977b17fa8cc25395f78563d2677f976176da5fb9bf35680b", "code"=>"4/iYISf3mMshlleoa55g68iu3Vhlct.UglFrR8fvcMbXE-sT2ZLcbQxzkKWigI", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '103271935090636425440' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["oauth_token", "ya29.1.AADtN_WzHZslkm4MuKR9eMU3jVahSjjb6KYBqS4uxWd00UHIQYF4FDSiceLcwGwmbO0"], ["oauth_expires_at", Thu, 10 Apr 2014 11:12:11 UTC +00:00], ["updated_at", Thu, 10 Apr 2014 10:12:12 UTC +00:00]]
+  [1m[35m (103.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 111ms (ActiveRecord: 104.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:42:12 +0530
 Processing by HomeController#show as HTML
-  Rendered home/show.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-04-10 13:43:41 +0530
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:42:13 +0530
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-04-10 15:42:23 +0530
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:42:23 +0530
 Processing by HomeController#show as HTML
-  Rendered home/show.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+  Rendered home/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/static_pages/help" for 127.0.0.1 at 2014-04-10 13:43:42 +0530
-Processing by StaticPagesController#help as HTML
-  Rendered static_pages/help.html.erb within layouts/application (0.2ms)
-Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/logo_small.png" for 127.0.0.1 at 2014-04-10 15:42:23 +0530
 
 
-Started GET "/" for 127.0.0.1 at 2014-04-10 13:43:42 +0530
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2014-04-10 15:42:25 +0530
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2014-04-10 15:42:25 +0530
+(google_oauth2) Request phase initiated.
+
+
+Started GET "/auth/google_oauth2/callback?state=9de9f568d8bc8eb228b5a5592ddd32138d106e5137e1299a&code=4/oLEMj5Ap9Y7GqzDt9SRFSNaOwFay.Qh_LDCPTRWceXE-sT2ZLcbSvWkOWigI" for 127.0.0.1 at 2014-04-10 15:42:29 +0530
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"9de9f568d8bc8eb228b5a5592ddd32138d106e5137e1299a", "code"=>"4/oLEMj5Ap9Y7GqzDt9SRFSNaOwFay.Qh_LDCPTRWceXE-sT2ZLcbSvWkOWigI", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '103271935090636425440' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "ya29.1.AADtN_UV-Vlm47_CMIuyFZtZuanzTGMM-pmYxujpw1571i9EVE-wAFB8UrQ9OKHxBbA"], ["oauth_expires_at", Thu, 10 Apr 2014 11:12:29 UTC +00:00], ["updated_at", Thu, 10 Apr 2014 10:12:30 UTC +00:00]]
+  [1m[36m (126.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 134ms (ActiveRecord: 128.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-10 15:42:30 +0530
 Processing by HomeController#show as HTML
-  Rendered home/show.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/static_pages/home" for 127.0.0.1 at 2014-04-10 13:43:50 +0530
-Processing by StaticPagesController#home as HTML
-  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
-Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/static_pages/app/assets/javascripts/bootstrap.js" for 127.0.0.1 at 2014-04-10 13:43:50 +0530
-
-ActionController::RoutingError (No route matches [GET] "/static_pages/app/assets/javascripts/bootstrap.js"):
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /home/mridul/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]

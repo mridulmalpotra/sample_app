@@ -1,3 +1,17 @@
-<h1>Sample App Home Page</h1>
-<p>This is the sample_app by <a href="http://mridul.co">Mridul Malpotra</a></p>
-<p>END</p>
+<div class="center hero-unit">
+
+  <% if current_user %>
+  	<h4>You are logged in as <%= link_to current_user.name,  '#' %>. More things coming!</h4>
+  <% else %>
+  <h1>Pyxe</h1>
+  <h2>Fluid and fast image sharing on Rails</h2>
+  	<%= link_to "Sign in with Google", "/auth/google_oauth2", {id: "sign_in", class: "btn btn-large btn-primary"} %>
+  <% end %>
+</div>
+
+<%= link_to image_tag("logo_small.png", alt: "Pyxe"), '#' %>
+
+<!--  class: "btn btn-large btn-primary" 
+<%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+-->
