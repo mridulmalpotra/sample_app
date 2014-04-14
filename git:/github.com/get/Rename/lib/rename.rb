@@ -1,0 +1,2 @@
+module Rename
+end
